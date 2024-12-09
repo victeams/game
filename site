@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Boy Universe</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to bottom, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 1em 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            position: relative;
+            background: #ccc url('https://via.placeholder.com/1200x400') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner h2 {
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .category {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+        }
+        .category h3 {
+            text-align: center;
+            margin: 0;
+            padding: 15px;
+            background: #333;
+            color: #fff;
+        }
+        .video-section {
+            padding: 20px;
+            text-align: center;
+            background: #e0e0e0;
+        }
+        .video-section video {
+            max-width: 100%;
+            border: 5px solid #333;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Boy Universe</h1>
+    </header>
+
+    <nav>
+        <a href="#gbf">Game Boy Fat</a>
+        <a href="#gbc">Game Boy Color</a>
+        <a href="#gba">Game Boy Advance</a>
+        <a href="#gbp">Game Boy Pocket</a>
+    </nav>
+
+    <div class="banner">
+        <h2>Explore the Legendary Game Boy Series</h2>
+    </div>
+
+    <section id="categories" class="categories">
+        <div class="category" id="gbf">
+            <img src="https://via.placeholder.com/400x200" alt="Game Boy Fat">
+            <h3>Game Boy Fat</h3>
+        </div>
+        <div class="category" id="gbc">
+            <img src="https://via.placeholder.com/400x200" alt="Game Boy Color">
+            <h3>Game Boy Color</h3>
+        </div>
+        <div class="category" id="gba">
+            <img src="https://via.placeholder.com/400x200" alt="Game Boy Advance">
+            <h3>Game Boy Advance</h3>
+        </div>
+        <div class="category" id="gbp">
+            <img src="https://via.placeholder.com/400x200" alt="Game Boy Pocket">
+            <h3>Game Boy Pocket</h3>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <h2>Relive the Retro Magic</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Game Boy Universe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
